@@ -1,0 +1,661 @@
+/* ****************************** <Globals> **************************************** */
+@import url("bootstrap.min.css");
+@import url("all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css");
+@import url("fonts.css");
+@import url("static.css");
+ 
+/* ****************************** <Navbar> **************************************** */
+.Nav {
+    padding: 25px 0;
+    z-index: 99999999999999;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.Nav::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.65);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    -webkit-backdrop-filter: blur(8.5px);
+    backdrop-filter: blur(8.5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1019607843);
+    transition: all ease-in-out 0.3s;
+}
+
+.Nav .nav-logo {
+    width: 235px;
+    height: 30px;
+}
+
+.dropdown-item:hover {
+    background: white !important;
+}
+
+.Nav .nav-list {
+    width: 70%;
+}
+
+.nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-no-border {
+    padding-top: 8px;
+}
+
+.nav-link,
+.dropdown-item,
+.dropdown-toggle {
+    color: var(--main-color);
+    transition: all ease-in-out 0.3;
+}
+
+.nav-link:hover,
+.dropdown-item:hover,
+.dropdown-toggle:hover {
+    color: var(--main-color-hover);
+}
+
+/* ****************************** </Navbar> **************************************** */
+
+/* ****************************** <Home> **************************************** */
+
+.home {
+    height: 400px;
+    background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(49, 96, 255, 0.5), rgba(49, 96, 255, 1)),
+        url(../Images/hero.jpg);
+    background-position: top center;
+    background-size: cover;
+    padding-top: 80px;
+}
+
+.home .header-text h1 {
+    font-size: 2.25rem;
+    line-height: 1;
+    color: #e0dcdc;
+}
+
+.home .robot {
+    width: 105%;
+}
+
+/* ****************************** </Home> **************************************** */
+
+/* ****************************** <OurStory> **************************************** */
+
+.borderr {
+    border-bottom-right-radius: 50px;
+    width: 100%;
+}
+
+.bg-light-gray::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    background: var(--light-gray);
+    z-index: -1;
+}
+
+.bg-light-gray {
+    background: var(--light-gray);
+}
+
+.OurStory .bg-wee {
+    background-image: url(../Images/1wee.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.OurStory .data h3 {
+    color: var(--color-blue);
+    font-size: 20.8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.OurStory .data h2 {
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: var(--dark-gray);
+}
+
+.OurStory .data p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: "Metrophobic", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--dark-gray);
+}
+
+.OurStory .data .text-red {
+    margin-bottom: 0;
+}
+
+.text-red {
+    font-weight: 5 00 !important;
+    color: var(--red) !important;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ****************************** </OurStory> **************************************** */
+
+
+/* ****************************** <WhyNow> **************************************** */
+.WhyNow .bg-wee {
+    background-image: url(../Images/2wwe.jpg);
+}
+
+.col-xxl-Img {
+    width: 449px;
+}
+
+.col-xxl-Data {
+    width: calc(100% - 449px);
+}
+
+/* ****************************** </WhyNow> **************************************** */
+
+/* ****************************** <WhyUs> **************************************** */
+
+.WhyUs {
+    overflow: hidden;
+}
+
+.WhyUs .borderr {
+    padding: 80px 60px 60px 60px;
+    border-radius: 0%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.WhyUs .bg-light-gray::before {
+    left: 50%;
+}
+
+.WhyUs .data h2 {
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.WhyUs .Head {
+    font-size: 16px !important;
+    color: var(--dark-gray) !important;
+    padding-left: 0px;
+    font-weight: 500 !important;
+}
+
+.WhyUs .icons {
+    min-height: 40px;
+}
+
+.WhyUs .icons img {
+    max-width: 39.88px;
+    max-height: 39.88px;
+    object-fit: contain;
+}
+
+/* ****************************** </WhyUs> **************************************** */
+
+
+/* ****************************** </WhyUs> **************************************** */
+
+.MeetOurTeam h4 {
+    font-weight: 400;
+    color: var(--color-blue);
+}
+
+.MeetOurTeam h2 {
+    font-size: 40px;
+    margin: 16px 193.5px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: var(--dark-gray);
+}
+
+.MeetOurTeam p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: var(--main-color);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.MeetOurTeam .icon-in {
+    width: 31px;
+    height: 31px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #0077b5;
+    padding: 5px;
+    position: relative;
+}
+
+.MeetOurTeam .icon-in i {
+    position: absolute;
+    top: 25%;
+    left: 25.5%;
+    color: white;
+    z-index: 55;
+}
+
+.MeetOurTeam .card-img {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.text-blue {
+    color: var(--color-blue);
+}
+
+h5.text-blue {
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.robott {
+    position: absolute;
+    right: -28px;
+    bottom: -5px;
+    z-index: 9;
+    height: 155%;
+    width: 280px;
+
+}
+
+.trad-bord {
+    margin-top: 220px;
+    border-radius: 100px;
+    background: var(--color-blue);
+}
+
+.trademarks h2 {
+    font-size: 28.8px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.trademarks p {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.trademarks .data {
+    margin-left: 110px;
+}
+
+.trademarks .btn-contact {
+    background: transparent;
+    color: white;
+    padding: 8px 25px;
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+.trademarks .btn-contact:hover {
+    background: white;
+    color: black;
+}
+
+
+.footer {
+    margin: 60px 0 0 0;
+    padding: 45px 0 25px;
+    background: #dfe7ff;
+
+}
+
+.col-fot-img {
+    width: 19%;
+    max-height: 33px;
+}
+
+.icon-footer {
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.footer h5 .icon-footer.first {
+    margin-left: 12px;
+}
+
+.copy-write span a {
+    color: #2310d4;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.copy-write {
+    color: #181c34;
+    font-size: 18px;
+}
+
+.img-fluid {
+    max-width: 80px;
+    height: auto;
+}
+
+.img-fluid-3 {
+    max-width: 50px;
+    height: auto;
+}
+
+.footer-anchor {
+    color: var(--color-blue);
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-anchor:hover {
+    color: var(--dark-gray);
+}
+
+.color-dark-blue {
+    color: #2310d4;
+}
+
+.Nav-Responsive {
+    background: white;
+    height: 100%;
+    padding: 60px 80px 0 40px;
+}
+
+
+.Nav-Responsive ul {
+    list-style: none;
+
+}
+
+.Nav-Responsive h3 {
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+}
+
+.Nav-Responsive li {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-color);
+    margin: 6px 0;
+}
+
+
+
+
+/* Resposive */
+
+
+@media screen and (max-width: 1025px) {
+    .Nav .nav-list {
+        width: 74%;
+    }
+
+    .Nav .container-fluid {
+        max-width: 960px !important;
+    }
+
+    .home .header-text h1 {
+        font-size: 29px;
+    }
+
+    .OurStory.WhyUs .container {
+        max-width: 862px;
+    }
+
+    .OurStory .data h2 {
+        font-size: 37px;
+    }
+
+    .OurStory .data .icons img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .OurStory .data p {
+        font-size: 14px;
+    }
+
+    .OurStory .data .text-red {
+        font-size: 17.5px;
+        font-weight: 500;
+    }
+
+    .OurStory.WhyUs .container {
+        width: 90%;
+    }
+
+    .OurStory .data h3 {
+        font-size: 18.2px;
+    }
+
+    .OurStory .data h2 {
+        font-size: 35px;
+    }
+
+    .WhyNow .data h2 {
+        line-height: 1;
+        font-weight: 500;
+    }
+
+    .WhyUs .borderr {
+        padding-right: 0;
+    }
+
+    .home .header-text h1 {
+        font-size: 32px;
+    }
+
+    .col-xxl-Data {
+        width: 40%;
+    }
+
+    .col-xxl-Img {
+        width: 60%;
+    }
+
+    .MeetOurTeam h2 {
+        margin: 14px 96px;
+        font-size: 35px;
+        line-height: 1;
+    }
+
+    .MeetOurTeam h4 {
+        font-size: 18.2px;
+    }
+
+    .MeetOurTeam p {
+        font-size: 14px;
+    }
+
+    .MeetOurTeam h5.mt-lg-3 {
+        font-size: 14px;
+        margin-top: 5px;
+        font-weight: 700;
+    }
+
+    .MeetOurTeam h5.text-blue {
+        font-size: 14px
+    }
+
+    .MeetOurTeam .owl-stage {
+        width: 2551px !important;
+    }
+
+    .robott {
+        right: -30px;
+        height: 135%;
+        width: 250px;
+    }
+
+    .trademarks h2 {
+        font-size: 25.2px;
+    }
+
+    .trademarks p {
+        font-size: 14px;
+    }
+
+    .trademarks .btn-contact {
+        padding: 8px 18px;
+        padding-top: 5px;
+    }
+
+    .trademarks .data {
+        margin-left: 0;
+        padding: 0 25px;
+    }
+
+    .roundddd {
+        border-radius: 25px;
+    }
+
+    .col-fot-img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .home .header-text h1 {
+        font-size: 27px;
+    }
+
+    .OurStory .data h2 {
+        font-size: 20.4px;
+    }
+
+    .col-xxl-Data {
+        width: 100%;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .OurStory .data p {
+        font-size: 12px;
+    }
+
+    .col-xxl-Img {
+        width: 100%;
+    }
+
+    .borderr {
+        border-top-right-radius: 50px;
+    }
+
+    .OurStory .data h3 {
+        font-size: 15.6px;
+    }
+
+    .OurStory .data h2 {
+        font-size: 20.2px;
+    }
+
+    .col-sm-6 {
+        width: 50% !important;
+    }
+
+    .col-fot-img {
+        width: 40%;
+    }
+
+    .robott {
+        display: none;
+    }
+
+    .trademarks .data {
+        margin-left: 0;
+    }
+
+    .trad-bord {
+        border-radius: 20px;
+    }
+
+    .trademarks h2 {
+        font-size: 21px;
+    }
+
+    .trademarks p {
+        font-size: 12px;
+    }
+
+    .trademarks .btn-contact {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .MeetOurTeam h2 {
+        font-size: 20.4px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer-anchor {
+        font-size: 12px;
+    }
+
+    .MeetOurTeam .card-img {
+        width: 50%;
+    }
+
+    .WhyUs .borderr {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .col-sm-3 {
+        width: 15%;
+    }
+
+    .col-sm-9 {
+        width: 85%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .col-xxl-Data {
+        width: 50%;
+    }
+
+    .col-xxl-Img {
+        width: 50%;
+    }
+
+    .col-fot-img {
+        width: 20%;
+    }
+}
